@@ -57,9 +57,9 @@
   </licenses>
 
   <scm>
-    <connection>scm:git:git://github.com/openengsb/openengsb.git</connection>
-    <developerConnection>scm:git:git@github.com:openengsb/openengsb.git</developerConnection>
-    <url>http://github.com/openengsb/openengsb</url>
+    <connection>scm:git:git://github.com/openengsb/openengsb-domain-build.git</connection>
+    <developerConnection>scm:git:git@github.com:openengsb/openengsb-domain-build.git</developerConnection>
+    <url>http://github.com/openengsb/openengsb-domain-build</url>
   </scm>
 
   <build>
