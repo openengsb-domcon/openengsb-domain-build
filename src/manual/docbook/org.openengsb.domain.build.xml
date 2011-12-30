@@ -26,12 +26,12 @@
   http://www.w3.org/2001/XMLSchema-instance http://www.w3.org/2001/XMLSchema-instance.xsd">
 
   <title>Build Domain</title>
-  <para>The build domain is the tool domain for build tools, like maven or make.</para>
+  <para>The build domain is a domain for all build tools, like <link xlink:href="http://maven.apache.org/">Maven</link> or
+    <link xlink:href="http://ant.apache.org/">Ant</link>.</para>
   <section>
     <title>Description</title>
-    <para>The build domain provides the possibility to build projects.</para>
+    <para>The build domain builds a specific pre-configured project or suite of projects.</para>
   </section>
-
   <section>
     <title>Functional Interface</title>
     <para>The following listing presents the Java Domain Interface. This interface also contains information 
