@@ -20,6 +20,7 @@ package org.openengsb.domain.build;
 import org.openengsb.core.api.Domain;
 import org.openengsb.core.api.Raises;
 
+// @extract-start BuildDomain
 /**
  * This domain can be used to build projects. The affected project is usually configured in the respective tool
  * connector.
@@ -42,3 +43,4 @@ public interface BuildDomain extends Domain {
     void build(long processId);
 
 }
+// @extract-end

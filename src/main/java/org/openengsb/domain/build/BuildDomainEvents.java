@@ -18,7 +18,7 @@
 package org.openengsb.domain.build;
 
 import org.openengsb.core.api.DomainEvents;
-
+// @extract-start BuildDomainEvents
 public interface BuildDomainEvents extends DomainEvents {
 
     void raiseEvent(BuildStartEvent e);
@@ -27,3 +27,4 @@ public interface BuildDomainEvents extends DomainEvents {
 
     void raiseEvent(BuildFailEvent e);
 }
+// @extract-end
