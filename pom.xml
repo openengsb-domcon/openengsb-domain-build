@@ -49,7 +49,9 @@
   </description>
 
   <url>http://www.openengsb.org</url>
-
+  
+  <inceptionYear>2009</inceptionYear>
+  
   <licenses>
     <license>
       <name>Apache 2</name>
@@ -63,6 +65,16 @@
     <developerConnection>scm:git:git@github.com:openengsb/openengsb-domain-build.git</developerConnection>
     <url>http://github.com/openengsb/openengsb-domain-build</url>
   </scm>
+  
+  <issueManagement>
+    <system>JIRA</system>
+    <url>http://issues.openengsb.org/jira/browse/OPENENGSB</url>
+  </issueManagement>
+
+  <ciManagement>
+    <system>OpenCIT</system>
+    <url>http://build.openengsb.org/opencit/</url>
+  </ciManagement>
 
   <build>
     <plugins>
