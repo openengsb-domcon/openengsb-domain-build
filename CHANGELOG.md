@@ -23,6 +23,9 @@ Release Notes - OpenEngSB - Version domain-build-2.0.0
     * [OPENENGSB-2596] - Adapt domain.name in domains to be e.g. AppointmentDomain instead of Appointment alone
     * [OPENENGSB-2620] - release domain-build-2.0.0
 
+** Known Issues
+    * [OPENENGSB-2621] - Domain definition is not suited for distributed builds
+
 
 openengsb-domain-build-1.2.1 2011-05-23
 ---------------------------------------------------------------------
