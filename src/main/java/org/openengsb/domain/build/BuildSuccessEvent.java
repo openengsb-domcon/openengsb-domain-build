@@ -18,20 +18,25 @@
 package org.openengsb.domain.build;
 
 import org.openengsb.core.api.Event;
+import org.openengsb.core.api.model.OpenEngSBFileModel;
 
 public class BuildSuccessEvent extends Event {
     private String output;
 
     private String buildId;
 
-    public BuildSuccessEvent(String buildId, String output) {
+    private OpenEngSBFileModel path;
+
+    public BuildSuccessEvent(String buildId, String output, OpenEngSBFileModel path) {
         this.buildId = buildId;
         this.output = output;
+        this.path = path;
     }
 
-    public BuildSuccessEvent(Long processId, String output) {
+    public BuildSuccessEvent(Long processId, String output, OpenEngSBFileModel path) {
         super(processId);
         this.output = output;
+        this.path = path;
     }
 
     public String getBuildId() {
@@ -40,6 +45,10 @@ public class BuildSuccessEvent extends Event {
 
     public String getOutput() {
         return output;
+    }
+
+    public OpenEngSBFileModel getPath() {
+        return path;
     }
 
 }
