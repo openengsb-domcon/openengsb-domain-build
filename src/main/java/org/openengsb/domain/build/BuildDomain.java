@@ -19,6 +19,7 @@ package org.openengsb.domain.build;
 
 import org.openengsb.core.api.Domain;
 import org.openengsb.core.api.Raises;
+import org.openengsb.core.api.model.OpenEngSBFileModel;
 
 // @extract-start BuildDomain
 /**
@@ -28,19 +29,19 @@ import org.openengsb.core.api.Raises;
 public interface BuildDomain extends Domain {
 
     /**
-     * build the currently configured project. This method returns at once with an id. The build is conducted
+     * build the project in 'path'. This method returns at once with an id. The build is conducted
      * asynchronously. The result can be retrieved using the events raised by this domain, which also contain the id.
      */
     @Raises({ BuildStartEvent.class, BuildSuccessEvent.class })
-    String build();
+    String build(OpenEngSBFileModel path);
 
     /**
-     * build the currently configured project. This method returns at once with an id. The build is conducted
+     * build the project in 'path'. This method returns at once with an id. The build is conducted
      * asynchronously. As soon as the build is finished an event is raised. The processId-field of the event must be
      * populated with the supplied processId.
      */
     @Raises({ BuildStartEvent.class, BuildSuccessEvent.class })
-    void build(long processId);
+    void build(OpenEngSBFileModel path, long processId);
 
 }
 // @extract-end
